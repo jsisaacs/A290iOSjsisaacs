@@ -7,10 +7,9 @@ func randomInRange (_ pMin: Int, _ pMax: Int) -> Int {
 
 //
 var randNumber = randomInRange(1, 100)
-print("Guess a number between 1 and 100")
+//print("Guess a number between 1 and 100")
 var guessCount = 1
 
-var num: Int = 0
 //
 
 /*
@@ -22,8 +21,7 @@ if var userInput = readLine() {
 */
 
 let userInput = readLine()!
-var num = Int(userInput)
-
+let num = Int(userInput)
 print(num)
 
 //
