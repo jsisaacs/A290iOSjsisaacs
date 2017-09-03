@@ -20,11 +20,11 @@ class ViewController: UIViewController {
     
     //methods connecting the ViewController to the app's View
     @IBAction func aDigitIsPressed(_ sender: Any) {
-
-        
+        //TODO
     }
     
     @IBAction func anOperationIsPressed(_ sender: Any) {
+        //TODO
     }
     
     override func viewDidLoad() {
