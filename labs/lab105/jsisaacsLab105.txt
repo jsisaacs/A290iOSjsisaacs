@@ -1,0 +1,9 @@
+I ended up getting three colors to work.  When i put:
+
+self.window?.backgroundColor = UIColor.purple
+
+in func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
+
+and in  func applicationDidBecomeActive(_ application: 
+
+and in func applicationDidEnterBackground(_ application:
