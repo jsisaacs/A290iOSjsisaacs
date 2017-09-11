@@ -12,6 +12,7 @@
 		851774061F60AE700000D603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851774041F60AE700000D603 /* Main.storyboard */; };
 		851774081F60AE700000D603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851774071F60AE700000D603 /* Assets.xcassets */; };
 		8517740B1F60AE700000D603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851774091F60AE700000D603 /* LaunchScreen.storyboard */; };
+		855B63DE1F674D090075E4B8 /* ConcentratedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855B63DD1F674D090075E4B8 /* ConcentratedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		851774071F60AE700000D603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8517740A1F60AE700000D603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8517740C1F60AE700000D603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		855B63DD1F674D090075E4B8 /* ConcentratedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcentratedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				851774001F60AE700000D603 /* AppDelegate.swift */,
 				851774021F60AE700000D603 /* ViewController.swift */,
+				855B63DD1F674D090075E4B8 /* ConcentratedView.swift */,
 				851774041F60AE700000D603 /* Main.storyboard */,
 				851774071F60AE700000D603 /* Assets.xcassets */,
 				851774091F60AE700000D603 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				851774031F60AE700000D603 /* ViewController.swift in Sources */,
 				851774011F60AE700000D603 /* AppDelegate.swift in Sources */,
+				855B63DE1F674D090075E4B8 /* ConcentratedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				851774111F60AE700000D603 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
