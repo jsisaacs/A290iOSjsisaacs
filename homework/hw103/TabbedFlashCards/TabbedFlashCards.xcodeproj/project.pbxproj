@@ -13,6 +13,7 @@
 		85F47FAB1F63961E0092325C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F47FA91F63961E0092325C /* Main.storyboard */; };
 		85F47FAD1F63961E0092325C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F47FAC1F63961E0092325C /* Assets.xcassets */; };
 		85F47FB01F63961E0092325C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F47FAE1F63961E0092325C /* LaunchScreen.storyboard */; };
+		85F7CE001F66387A009A3C18 /* FlashCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F7CDFF1F66387A009A3C18 /* FlashCardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		85F47FAC1F63961E0092325C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85F47FAF1F63961E0092325C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85F47FB11F63961E0092325C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85F7CDFF1F66387A009A3C18 /* FlashCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				85F47FA31F63961E0092325C /* AppDelegate.swift */,
+				85F7CDFF1F66387A009A3C18 /* FlashCardModel.swift */,
 				85F47FA51F63961E0092325C /* FirstViewController.swift */,
 				85F47FA71F63961E0092325C /* SecondViewController.swift */,
 				85F47FA91F63961E0092325C /* Main.storyboard */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F7CE001F66387A009A3C18 /* FlashCardModel.swift in Sources */,
 				85F47FA81F63961E0092325C /* SecondViewController.swift in Sources */,
 				85F47FA41F63961E0092325C /* AppDelegate.swift in Sources */,
 				85F47FA61F63961E0092325C /* FirstViewController.swift in Sources */,
@@ -305,6 +309,7 @@
 				85F47FB61F63961E0092325C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
