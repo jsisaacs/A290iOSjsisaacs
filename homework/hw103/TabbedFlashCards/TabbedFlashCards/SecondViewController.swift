@@ -32,8 +32,8 @@ class SecondViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         
-        //self.questionTextField.text
-        self.answerTextField.text = myFlashCardModel!.getAnswer()
+        self.questionTextField.text = "Q"
+        self.answerTextField.text = "A"
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
