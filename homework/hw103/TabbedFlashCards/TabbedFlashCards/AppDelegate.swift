@@ -13,9 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    // create an instance of the main Model class
-    //   so that it can be accessed from any Controller
-    //   by referring to the AppDelegate:
     let myFlashCardModel : FlashCardModel = FlashCardModel()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

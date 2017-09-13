@@ -9,17 +9,36 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    // the reference to our AppDelegate:
+    var appDelegate: AppDelegate?
+    // the reference to our data model:
+    var myFlashCardModel: FlashCardModel?
+    
+    @IBOutlet weak var questionTextField: UITextField!
+    @IBOutlet weak var answerTextField: UITextField!
+    
+    @IBAction func buttonOkAction(sender: AnyObject) {
+        print ("self.questionTextField.text = \(self.questionTextField.text)")
+        print ("self.answerTextField.text = \(self.answerTextField.text)")
+        
+    }
+    
+    func buttonOKAction() {
+        //TODO
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //self.questionTextField.text
+        self.answerTextField.text = myFlashCardModel!.getAnswer()
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

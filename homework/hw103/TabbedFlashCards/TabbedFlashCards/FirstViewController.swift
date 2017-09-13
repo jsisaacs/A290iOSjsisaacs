@@ -15,22 +15,22 @@ class FirstViewController: UIViewController {
     // the reference to our data model:
     var myFlashCardModel: FlashCardModel?
     
-    weak var questionLabel: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
 
-    @IBAction func showQuestion(_ sender: Any) {
-        // obtain a reference to the AppDelegate:
+    @IBAction func showQuestion(_ sender: UIButton) {
         self.appDelegate = UIApplication.shared.delegate as? AppDelegate
-        // the old UIApplication version API was:
-        // self.appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate
-        
-        // from the AppDelegate, obtain a reference to the Model data:
         self.myFlashCardModel = self.appDelegate?.myFlashCardModel
+        let lQuestion : String = self.myFlashCardModel!.getNextQuestion()
+        self.questionLabel.text = lQuestion
+        self.answerLabel.text = "( just try and guess... )"
         
-        var lQuestion : String = self.myFlashCardModel!.getNextQuestion()
-    }
+            }
     
-    @IBAction func showAnswer(_ sender: Any) {
+    @IBAction func showAnswer(_ sender: UIButton) {
+        self.appDelegate = UIApplication.shared.delegate as? AppDelegate
+        self.myFlashCardModel = self.appDelegate?.myFlashCardModel
+        self.answerLabel.text = myFlashCardModel!.getAnswer()
     }
     
     override func viewDidLoad() {
