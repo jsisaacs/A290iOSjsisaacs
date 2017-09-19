@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.backgroundColor = UIColor.purple
         
-        let ourView = ConcentratedView(frame: self.window!bounds)
-        self.window!.addSubview(ourView)
+        //let ourView = ConcentratedView(frame: self.window!bounds)
+        //self.window!.addSubview(ourView)
         
         return true
     }

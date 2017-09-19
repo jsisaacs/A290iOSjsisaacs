@@ -1,14 +1,15 @@
 //
-//  ViewController.swift
-//  EventsAndTouches
+//  EandTViewController.swift
+//  TabbedApp
 //
-//  Created by Josh Isaacson - Work on 9/6/17.
-//  Copyright © 2017 A290. All rights reserved.
+//  Created by Josh Isaacson - Work on 9/18/17.
+//  Copyright © 2017 A290 Fall 2017 - jsisaacs. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class EandTViewController: UIViewController {
+    
     @IBOutlet var messageLabel: UILabel!
     @IBOutlet var tapsLabel: UILabel!
     @IBOutlet var touchesLabel: UILabel!
@@ -29,7 +30,7 @@ class ViewController: UIViewController {
         if let firstTouch = touches.first {
             let gestureStartPoint = firstTouch.location(in: self.view)
             self.messageLabel.text =
-                "Touches Began at \(gestureStartPoint.x), \(gestureStartPoint.y)"
+            "Touches Began at \(gestureStartPoint.x), \(gestureStartPoint.y)"
         }
     }
     
@@ -54,12 +55,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    
 }
-

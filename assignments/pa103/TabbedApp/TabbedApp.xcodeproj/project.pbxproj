@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		856941D21F6F65620062B359 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856941D11F6F65620062B359 /* AppDelegate.swift */; };
 		856941D41F6F65620062B359 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856941D31F6F65620062B359 /* HomeViewController.swift */; };
-		856941D61F6F65620062B359 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856941D51F6F65620062B359 /* SecondViewController.swift */; };
+		856941D61F6F65620062B359 /* ConcentratedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856941D51F6F65620062B359 /* ConcentratedViewController.swift */; };
 		856941D91F6F65620062B359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856941D71F6F65620062B359 /* Main.storyboard */; };
 		856941DB1F6F65620062B359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856941DA1F6F65620062B359 /* Assets.xcassets */; };
 		856941DE1F6F65620062B359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856941DC1F6F65620062B359 /* LaunchScreen.storyboard */; };
+		85C8A12D1F70B2E400DAAFC4 /* TabbedAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8A12C1F70B2E400DAAFC4 /* TabbedAppModel.swift */; };
+		85C8A12F1F70B57400DAAFC4 /* FlashCardsModelOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8A12E1F70B57400DAAFC4 /* FlashCardsModelOneViewController.swift */; };
+		85C8A1311F70B58600DAAFC4 /* TabbedFlashCardsOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8A1301F70B58600DAAFC4 /* TabbedFlashCardsOneViewController.swift */; };
+		85C8A1331F70B59D00DAAFC4 /* BinCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8A1321F70B59D00DAAFC4 /* BinCalcViewController.swift */; };
+		85C8A1351F70B5C200DAAFC4 /* EandTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8A1341F70B5C200DAAFC4 /* EandTViewController.swift */; };
+		85C8A1371F70C26900DAAFC4 /* ConcentratedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8A1361F70C26900DAAFC4 /* ConcentratedView.swift */; };
+		85C8A13B1F70C92900DAAFC4 /* TabbedFlashCardsTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8A13A1F70C92900DAAFC4 /* TabbedFlashCardsTwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		856941CE1F6F65620062B359 /* TabbedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabbedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856941D11F6F65620062B359 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		856941D31F6F65620062B359 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		856941D51F6F65620062B359 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		856941D51F6F65620062B359 /* ConcentratedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentratedViewController.swift; sourceTree = "<group>"; };
 		856941D81F6F65620062B359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		856941DA1F6F65620062B359 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		856941DD1F6F65620062B359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		856941DF1F6F65620062B359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C8A12C1F70B2E400DAAFC4 /* TabbedAppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbedAppModel.swift; sourceTree = "<group>"; };
+		85C8A12E1F70B57400DAAFC4 /* FlashCardsModelOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardsModelOneViewController.swift; sourceTree = "<group>"; };
+		85C8A1301F70B58600DAAFC4 /* TabbedFlashCardsOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbedFlashCardsOneViewController.swift; sourceTree = "<group>"; };
+		85C8A1321F70B59D00DAAFC4 /* BinCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinCalcViewController.swift; sourceTree = "<group>"; };
+		85C8A1341F70B5C200DAAFC4 /* EandTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EandTViewController.swift; sourceTree = "<group>"; };
+		85C8A1361F70C26900DAAFC4 /* ConcentratedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcentratedView.swift; sourceTree = "<group>"; };
+		85C8A13A1F70C92900DAAFC4 /* TabbedFlashCardsTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbedFlashCardsTwoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +72,18 @@
 			children = (
 				856941D11F6F65620062B359 /* AppDelegate.swift */,
 				856941D31F6F65620062B359 /* HomeViewController.swift */,
-				856941D51F6F65620062B359 /* SecondViewController.swift */,
+				856941D51F6F65620062B359 /* ConcentratedViewController.swift */,
+				85C8A1361F70C26900DAAFC4 /* ConcentratedView.swift */,
+				85C8A12E1F70B57400DAAFC4 /* FlashCardsModelOneViewController.swift */,
+				85C8A1301F70B58600DAAFC4 /* TabbedFlashCardsOneViewController.swift */,
+				85C8A13A1F70C92900DAAFC4 /* TabbedFlashCardsTwoViewController.swift */,
+				85C8A1321F70B59D00DAAFC4 /* BinCalcViewController.swift */,
+				85C8A1341F70B5C200DAAFC4 /* EandTViewController.swift */,
 				856941D71F6F65620062B359 /* Main.storyboard */,
 				856941DA1F6F65620062B359 /* Assets.xcassets */,
 				856941DC1F6F65620062B359 /* LaunchScreen.storyboard */,
 				856941DF1F6F65620062B359 /* Info.plist */,
+				85C8A12C1F70B2E400DAAFC4 /* TabbedAppModel.swift */,
 			);
 			path = TabbedApp;
 			sourceTree = "<group>";
@@ -139,9 +160,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				856941D61F6F65620062B359 /* SecondViewController.swift in Sources */,
+				85C8A1311F70B58600DAAFC4 /* TabbedFlashCardsOneViewController.swift in Sources */,
+				856941D61F6F65620062B359 /* ConcentratedViewController.swift in Sources */,
+				85C8A13B1F70C92900DAAFC4 /* TabbedFlashCardsTwoViewController.swift in Sources */,
 				856941D21F6F65620062B359 /* AppDelegate.swift in Sources */,
+				85C8A1351F70B5C200DAAFC4 /* EandTViewController.swift in Sources */,
+				85C8A12F1F70B57400DAAFC4 /* FlashCardsModelOneViewController.swift in Sources */,
+				85C8A1371F70C26900DAAFC4 /* ConcentratedView.swift in Sources */,
 				856941D41F6F65620062B359 /* HomeViewController.swift in Sources */,
+				85C8A12D1F70B2E400DAAFC4 /* TabbedAppModel.swift in Sources */,
+				85C8A1331F70B59D00DAAFC4 /* BinCalcViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +333,7 @@
 				856941E41F6F65620062B359 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
