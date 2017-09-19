@@ -1,0 +1,11 @@
++-----------------+
+|  Final Project  |
++-----------------+
+
+Overview:
+Logs cumulative data regarding tax deductions and then exports it to a 
+formatted pdf that contains all relavent info in a year end summary (category
+(professional memberships, automobile expenses, travel/meetings, office staff,
+etc.), items in each category, total $ per category, and then a grand total
+for year) that users can give to employers, tax papers, etc.
+
