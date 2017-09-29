@@ -1,0 +1,46 @@
+Joshua Isaacson - jsisaacs@iu.edu - Deduct It! - Lucidchart - 9/28/2017
+
+Design Document 
+
+
+Main Functionality
+User can log cumulative expenses that are tax deductible, export it to a formatted pdf, and visualize expenses in a simple and intuitive dashboard.
+
+
+Why is the problem important?
+The purpose of a tax deduction is to “decrease your taxable income, thus decreasing the amount of tax you owe to the federal government.”  According to H & R Block, over 4 million people don’t claim eligible tax deductions.
+
+
+What can be deducted?
+*  job expenses not reimbursed by employer
+   * union dues, uniforms, gas and car repair
+*  student loan interest that parents pay
+*  self-owned business
+   * office equipment, sales tax on business purchases, health insurance premiums
+* hybrid car tax credit 
+* Charity
+* theft and casualty
+   * unexpected loss of property from natural disaster, fire
+* home mortgage interest
+* state and local income or sales tax paid
+* personal property tax
+* real estate taxes and points 
+* gambling losses
+
+
+There are restrictions on what can be deducted, but the main point to be made is that there are a large number of people that could benefit from logging expenses and this app aims to provide this service.  The user is warned to keep all receipts for verification.
+
+
+What the app contributes
+1. Form for user input 
+   1. Item Name
+   2. Category of Expense 
+   3. Date
+   4. Cost
+1. PDF Rendering
+   1. Takes the form and embeds the info inside of a HTML template
+   2. Renders PDF on device
+   3. Gives user the option to export the file or delete
+1. Dashboard 
+   1. Bar chart displaying the total costs per month
+   2. Pie chart displaying the breakdown of total expense in terms of category of expense
