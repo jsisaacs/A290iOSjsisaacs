@@ -20,7 +20,7 @@ class ExpenseCell: UITableViewCell {
                 return
             }
             
-            itemLabel.text = expense.item
+            itemLabel.text = expense.name
             dateLabel.text = expense.date
             costLabel.text = "\(expense.cost)"
         }

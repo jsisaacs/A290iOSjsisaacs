@@ -301,13 +301,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Expenses" id="sWr-5d-IKd">
-                        <barButtonItem key="leftBarButtonItem" title="PDF" image="document" id="GPI-kQ-tEQ">
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                    <color key="value" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="E7o-ZA-IZ2">
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
@@ -454,7 +447,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <segue destination="3kB-YH-Imz" kind="unwind" identifier="savePlayerDetail" unwindAction="savePlayerDetail:" id="0jG-2v-H6o"/>
+                                <segue destination="3kB-YH-Imz" kind="unwind" identifier="saveExpenseDetail" unwindAction="saveExpenseDetail:" id="0jG-2v-H6o"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -468,34 +461,6 @@
                 <exit id="3kB-YH-Imz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2414" y="-477"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="4Pm-pb-ziR">
-            <objects>
-                <tableViewController id="z5C-wJ-ins" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aZJ-5u-hEO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="g8J-Id-rnx">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g8J-Id-rnx" id="vWh-jJ-fX3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="z5C-wJ-ins" id="0wH-xh-ZmU"/>
-                            <outlet property="delegate" destination="z5C-wJ-ins" id="MSF-o5-3Uu"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CeB-D5-2lm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5242" y="-585"/>
         </scene>
         <!--Expenses-->
         <scene sceneID="IPV-hx-IlA">
@@ -571,7 +536,6 @@
     <resources>
         <image name="ExampleChart1" width="526" height="390"/>
         <image name="ExampleChart2" width="424" height="402"/>
-        <image name="document" width="30" height="30"/>
         <image name="list" width="30" height="30"/>
         <image name="settings" width="30" height="30"/>
         <image name="statistics" width="30" height="30"/>

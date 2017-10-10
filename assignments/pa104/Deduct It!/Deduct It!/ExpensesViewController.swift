@@ -15,10 +15,10 @@ class ExpensesViewController: UITableViewController {
 }
 
 extension ExpensesViewController {
-    @IBAction func cancelToPlayersViewController(_ segue: UIStoryboardSegue) {
+    @IBAction func cancelToExpensesViewController(_ segue: UIStoryboardSegue) {
     }
     
-    @IBAction func savePlayerDetail(_ segue: UIStoryboardSegue) {
+    @IBAction func saveExpenseDetail(_ segue: UIStoryboardSegue) {
         guard let expenseDetailsViewController = segue.source as? ExpenseDetailsViewController,
             let expense = expenseDetailsViewController.expense else {
                 return

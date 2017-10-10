@@ -10,13 +10,13 @@ import Foundation
 
 class ExpenseModel: NSObject, NSCoding {
     
-    var expenses = [Expense]()
+    var expenses = [ExpenseUnit]()
     
     struct ExpenseModelKey {
         static let expenses = "expenses"
     }
     
-    init(expenses:[Expense]) {
+    init(expenses:[ExpenseUnit]) {
         self.expenses = expenses
         super.init()
     }
@@ -28,15 +28,15 @@ class ExpenseModel: NSObject, NSCoding {
     
     //initialize NSCoder, decode saved values
     required convenience init?(coder aDecoder: NSCoder) {
-        let expenses = aDecoder.decodeObject(forKey: ExpenseModelKey.expenses) as? [Expense]? ?? [Expense]()
+        let expenses = aDecoder.decodeObject(forKey: ExpenseModelKey.expenses) as? [ExpenseUnit]? ?? [ExpenseUnit]()
         
         //initialize
         self.init(expenses:expenses!)
     }
   
-    //Expense Management
+    //ExpenseUnit Management
     /*
-     An object of type Expense has the following attributes:
+     An object of type ExpenseUnit has the following attributes:
      cost, name, category, description
      
      newExpense
@@ -44,55 +44,55 @@ class ExpenseModel: NSObject, NSCoding {
      getExpense
      */
     
-    //newExpense creates and adds an Expense object to expenses array
-    func newExpense(cost:Double, name:String, category:String, desc:String) {
-        let expenseObj = Expense(cost:cost, name:name, category:category, desc:desc)
+    //newExpense creates and adds an ExpenseUnit object to expenses array
+    func newExpense(cost:Double, name:String, category:String, date:String) {
+        let expenseObj = ExpenseUnit(cost:cost, name:name, category:category, date:date)
         expenses.append(expenseObj)
     }
     
     //deleteExpense takes in an integer associated with the array position of
-    //the expense to be deleted from the expenses array
+    //the ExpenseUnit to be deleted from the expenses array
     func deleteExpense(position:Int) {
         expenses.remove(at: position)
     }
     
-    //getExpense returns an Expense at a particular position in the array expenses
-    func getExpense(position:Int) -> Expense {
+    //getExpense returns an ExpenseUnit at a particular position in the array expenses
+    func getExpense(position:Int) -> ExpenseUnit {
         return expenses[position]
     }
     
 }
 
-class Expense: NSObject, NSCoding{
+class ExpenseUnit: NSObject, NSCoding{
     var cost : Double
     var name : String
     var category : String
-    var desc: String
+    var date: String
     
     struct ExpenseKey {
         static let cost = "cost"
         static let name = "name"
         static let category = "category"
-        static let desc = "desc"
+        static let date = "date"
         static let expenses = "expenses"
     }
     
-    init(cost:Double, name:String, category:String, desc:String) {
+    init(cost:Double, name:String, category:String, date:String) {
         self.cost = cost
         self.name = name
         self.category = category
-        self.desc = desc
+        self.date = date
         super.init()
     }
     
-    //EXPENSE PERSISTENCE
+    //ExpenseUnit PERSISTENCE
     
     //encode saved values
     func encode(with aCoder: NSCoder) {
         aCoder.encode(cost, forKey: ExpenseKey.cost)
         aCoder.encode(name, forKey: ExpenseKey.name)
         aCoder.encode(category, forKey: ExpenseKey.category)
-        aCoder.encode(desc, forKey: ExpenseKey.desc)
+        aCoder.encode(date, forKey: ExpenseKey.date)
     }
     
     //initialize NSCoder, decode saved values
@@ -101,10 +101,10 @@ class Expense: NSObject, NSCoding{
         let name = aDecoder.decodeObject(forKey: ExpenseKey.name) as? String
         let cost = aDecoder.decodeDouble(forKey: ExpenseKey.cost)
         let category = aDecoder.decodeObject(forKey: ExpenseKey.category) as? String
-        let desc = aDecoder.decodeObject(forKey: ExpenseKey.desc) as? String
+        let date = aDecoder.decodeObject(forKey: ExpenseKey.date) as? String
         
         // initialize
-        self.init(cost:cost, name:name!, category:category!, desc:desc!)
+        self.init(cost:cost, name:name!, category:category!, date:date!)
     }
     
 }

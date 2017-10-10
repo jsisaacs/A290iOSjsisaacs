@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		853638771F804685005B31A4 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853638761F804685005B31A4 /* DashboardViewController.swift */; };
 		857CCA611F7FFCD200BCD89C /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857CCA601F7FFCD200BCD89C /* ExpenseCell.swift */; };
 		85804A691F8AA246004C3E7F /* ExpenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85804A681F8AA246004C3E7F /* ExpenseModel.swift */; };
 		85804A6B1F8AA25B004C3E7F /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85804A6A1F8AA25B004C3E7F /* SettingsModel.swift */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		853638761F804685005B31A4 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		857CCA601F7FFCD200BCD89C /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
 		85804A681F8AA246004C3E7F /* ExpenseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseModel.swift; sourceTree = "<group>"; };
 		85804A6A1F8AA25B004C3E7F /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 				8591B6B81F7FD0E3004F5BA2 /* SampleData.swift */,
 				8591B6B41F7FCFB0004F5BA2 /* ExpensesViewController.swift */,
 				85AF1CA91F800DB400BE0B55 /* ExpenseDetailsViewController.swift */,
-				853638761F804685005B31A4 /* DashboardViewController.swift */,
 				8591B6A91F7FC9B9004F5BA2 /* Assets.xcassets */,
 				8591B6AB1F7FC9B9004F5BA2 /* LaunchScreen.storyboard */,
 				8591B6AE1F7FC9B9004F5BA2 /* Info.plist */,
@@ -165,7 +162,6 @@
 				85804A6B1F8AA25B004C3E7F /* SettingsModel.swift in Sources */,
 				8591B6B91F7FD0E3004F5BA2 /* SampleData.swift in Sources */,
 				8591B6B51F7FCFB0004F5BA2 /* ExpensesViewController.swift in Sources */,
-				853638771F804685005B31A4 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
