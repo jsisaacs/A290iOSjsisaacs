@@ -20,7 +20,8 @@ class ExpenseDetailsViewController: UITableViewController {
         if segue.identifier == "SaveExpenseDetail",
             let expenseName = expenseNameTextField.text {
             //add category and change data type of date
-            expense = Expense(item: expenseName, date: "9/30/2017", cost: 10.00)
+            expense = Expense(cost: 10.00, name:expenseName, category: "category1", desc:"description")
+            //(cost:Double, name:String, category:String, desc:String)
         }
     }
     
@@ -30,10 +31,10 @@ class ExpenseDetailsViewController: UITableViewController {
 }
 
 extension ExpenseDetailsViewController {
-    @IBAction func cancelToPlayersViewController(_ segue: UIStoryboardSegue) {
+    @IBAction func cancelToExpensesViewController(_ segue: UIStoryboardSegue) {
     }
     
-    @IBAction func savePlayerDetail(_ segue: UIStoryboardSegue) {
+    @IBAction func saveExpenseDetail(_ segue: UIStoryboardSegue) {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

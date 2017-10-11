@@ -11,9 +11,9 @@ import Foundation
 final class SampleData {
     static func generateExpenseData() -> [Expense] {
         return [
-            Expense(item: "Expense1", date: "09/30/2017", cost: 14.75),
-            Expense(item: "Expense2", date: "09/30/2017", cost: 14.75),
-            Expense(item: "Expense3", date: "09/30/2017", cost: 14.75)
+            Expense(cost: 10.00, name:"name 1", category: "category 1", desc:"description"),
+            Expense(cost: 12.00, name:"name 2", category: "category 2", desc:"description"),
+            Expense(cost: 14.00, name:"name 3", category: "category 3", desc:"description"),
         ]
     }
 }

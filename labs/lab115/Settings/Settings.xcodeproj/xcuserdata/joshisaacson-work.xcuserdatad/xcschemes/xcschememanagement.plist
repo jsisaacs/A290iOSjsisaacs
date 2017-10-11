@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Deduct It!.xcscheme</key>
+		<key>Settings.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8591B69E1F7FC9B9004F5BA2</key>
+		<key>8590A2DA1F8ED71000A3DAE5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8590A2EE1F8ED71000A3DAE5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8590A2F91F8ED71000A3DAE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
