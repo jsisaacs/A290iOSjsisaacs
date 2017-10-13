@@ -21,12 +21,18 @@ class ExpenseDetailsViewController: UITableViewController {
             let expenseName = expenseNameTextField.text {
             //add category and change data type of date
             expense = Expense(cost: 10.00, name:expenseName, category: "category1", desc:"description")
+            expenses.append(expense!)
             //(cost:Double, name:String, category:String, desc:String)
         }
     }
     
+    @IBAction func addExpense(_ sender: Any) {
+        print("test")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("test2")
     }
 }
 
@@ -35,6 +41,7 @@ extension ExpenseDetailsViewController {
     }
     
     @IBAction func saveExpenseDetail(_ segue: UIStoryboardSegue) {
+        print("test3")
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

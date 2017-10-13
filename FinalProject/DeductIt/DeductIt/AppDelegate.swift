@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Deduct It!
+//  DeductIt
 //
-//  Created by Josh Isaacson - Work on 9/30/17.
-//  Copyright © 2017 A290/A590 Fall 2017 - jsisaacs. All rights reserved.
+//  Created by Josh Isaacson - Work on 10/12/17.
+//  Copyright © 2017 Josh Isaacson. All rights reserved.
 //
 
 import UIKit
@@ -43,6 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
+    
     func saveData() {
         let defaults = UserDefaults.standard
         let settingsData = NSKeyedArchiver.archivedData(withRootObject: settingsModel)
@@ -66,7 +67,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
     }
-
-
+    
 }
 

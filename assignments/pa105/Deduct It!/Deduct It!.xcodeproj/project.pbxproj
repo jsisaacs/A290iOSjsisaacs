@@ -10,6 +10,8 @@
 		857CCA611F7FFCD200BCD89C /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857CCA601F7FFCD200BCD89C /* ExpenseCell.swift */; };
 		85804A691F8AA246004C3E7F /* ExpenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85804A681F8AA246004C3E7F /* ExpenseModel.swift */; };
 		85804A6B1F8AA25B004C3E7F /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85804A6A1F8AA25B004C3E7F /* SettingsModel.swift */; };
+		8590A30F1F8EDE5300A3DAE5 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8590A30E1F8EDE5300A3DAE5 /* GlobalVariables.swift */; };
+		8590A3111F8EDFA700A3DAE5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8590A3101F8EDFA700A3DAE5 /* SettingsViewController.swift */; };
 		8591B6A31F7FC9B9004F5BA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8591B6A21F7FC9B9004F5BA2 /* AppDelegate.swift */; };
 		8591B6A51F7FC9B9004F5BA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8591B6A41F7FC9B9004F5BA2 /* ViewController.swift */; };
 		8591B6A81F7FC9B9004F5BA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8591B6A61F7FC9B9004F5BA2 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		857CCA601F7FFCD200BCD89C /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
 		85804A681F8AA246004C3E7F /* ExpenseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseModel.swift; sourceTree = "<group>"; };
 		85804A6A1F8AA25B004C3E7F /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		8590A30E1F8EDE5300A3DAE5 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		8590A3101F8EDFA700A3DAE5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8591B69F1F7FC9B9004F5BA2 /* Deduct It!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deduct It!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8591B6A21F7FC9B9004F5BA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8591B6A41F7FC9B9004F5BA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +78,9 @@
 				85804A6A1F8AA25B004C3E7F /* SettingsModel.swift */,
 				8591B6B81F7FD0E3004F5BA2 /* SampleData.swift */,
 				8591B6B41F7FCFB0004F5BA2 /* ExpensesViewController.swift */,
+				8590A30E1F8EDE5300A3DAE5 /* GlobalVariables.swift */,
 				85AF1CA91F800DB400BE0B55 /* ExpenseDetailsViewController.swift */,
+				8590A3101F8EDFA700A3DAE5 /* SettingsViewController.swift */,
 				8591B6A91F7FC9B9004F5BA2 /* Assets.xcassets */,
 				8591B6AB1F7FC9B9004F5BA2 /* LaunchScreen.storyboard */,
 				8591B6AE1F7FC9B9004F5BA2 /* Info.plist */,
@@ -157,6 +163,8 @@
 				85AF1CAA1F800DB400BE0B55 /* ExpenseDetailsViewController.swift in Sources */,
 				8591B6A51F7FC9B9004F5BA2 /* ViewController.swift in Sources */,
 				85804A691F8AA246004C3E7F /* ExpenseModel.swift in Sources */,
+				8590A3111F8EDFA700A3DAE5 /* SettingsViewController.swift in Sources */,
+				8590A30F1F8EDE5300A3DAE5 /* GlobalVariables.swift in Sources */,
 				8591B6A31F7FC9B9004F5BA2 /* AppDelegate.swift in Sources */,
 				857CCA611F7FFCD200BCD89C /* ExpenseCell.swift in Sources */,
 				85804A6B1F8AA25B004C3E7F /* SettingsModel.swift in Sources */,

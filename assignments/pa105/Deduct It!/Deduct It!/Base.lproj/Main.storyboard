@@ -15,9 +15,10 @@
             <objects>
                 <navigationController id="BPH-WV-x4D" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Dashboard" image="statistics" id="WOD-3I-L7O"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ewp-ob-bo1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ewp-ob-bo1">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.34473815340000002" green="0.5755276305" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -165,7 +166,7 @@
             </objects>
             <point key="canvasLocation" x="2413.5999999999999" y="286.50674662668666"/>
         </scene>
-        <!--Dashboard-->
+        <!--Statistics-->
         <scene sceneID="0Uh-B3-0x6">
             <objects>
                 <viewController id="DS3-aC-6hf" customClass="DashboardViewController" customModule="Deduct_It_" customModuleProvider="target" sceneMemberID="viewController">
@@ -176,25 +177,9 @@
                     <view key="view" contentMode="scaleToFill" id="qi6-Vm-A23">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LrQ-le-3az">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ExampleChart1" translatesAutoresizingMaskIntoConstraints="NO" id="9GQ-kY-cg3">
-                                        <rect key="frame" x="0.0" y="8" width="347" height="247"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ExampleChart2" translatesAutoresizingMaskIntoConstraints="NO" id="Dmj-Sh-ynl">
-                                        <rect key="frame" x="33" y="276" width="280" height="253"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                            </scrollView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Dashboard" id="xIE-TJ-msd">
+                    <navigationItem key="navigationItem" title="Statistics" id="xIE-TJ-msd">
                         <barButtonItem key="leftBarButtonItem" title="Settings" image="settings" id="dHt-BL-PHf">
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
@@ -321,7 +306,7 @@
         <!--Add Expense-->
         <scene sceneID="ieU-Vi-MpT">
             <objects>
-                <tableViewController id="Bao-hi-VlY" customClass="ExpenseDetailsViewController" customModule="Deduct_It_" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Bao-hi-VlY" customClass="ExpensesViewController" customModule="Deduct_It_" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="FQX-Fu-EB6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -441,15 +426,12 @@
                                 <segue destination="3kB-YH-Imz" kind="unwind" unwindAction="cancelToExpensesViewController:" id="g8n-sq-yle"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ZSZ-iX-iP2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="DCQ-v6-jz7">
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                     <color key="value" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
-                            <connections>
-                                <segue destination="3kB-YH-Imz" kind="unwind" identifier="saveExpenseDetail" unwindAction="saveExpenseDetail:" id="0jG-2v-H6o"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -561,10 +543,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ExampleChart1" width="526" height="390"/>
-        <image name="ExampleChart2" width="424" height="402"/>
         <image name="list" width="30" height="30"/>
         <image name="settings" width="30" height="30"/>
         <image name="statistics" width="30" height="30"/>
     </resources>
+    <color key="tintColor" red="0.079784576877807045" green="1" blue="0.13702231296354817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
