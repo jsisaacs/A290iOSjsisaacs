@@ -9,4 +9,4 @@
 import Foundation
 
 var expenses = [Expense]()
-var settingsModel = Settings(currency:"$",name:"Josh", address:"address")
+var settingsModel = Settings(currency:"$")

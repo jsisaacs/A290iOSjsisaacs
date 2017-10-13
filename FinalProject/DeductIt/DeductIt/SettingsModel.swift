@@ -20,41 +20,41 @@ class Settings: NSObject, NSCoding {
      */
     
     var currency : String
-    var name : String
-    var address : String
+    //var name : String
+    //var address : String
     
     //SETTINGS PERSISTENCE
     
     struct SettingsKey {
         static let currency = "currency"
-        static let name = "name"
-        static let address = "address"
+        //static let name = "name"
+        //static let address = "address"
     }
     
-    init(currency:String, name:String, address:String) {
+    init(currency:String) {//, name:String, address:String) {
         self.currency = currency
-        self.name = name
-        self.address = address
-        super.init()
+        //self.name = name
+        //self.address = address
+        //super.init()
     }
     
     
     //encode saved values for app settings
     func encode(with aCoder: NSCoder) {
         aCoder.encode(currency, forKey: SettingsKey.currency)
-        aCoder.encode(name, forKey: SettingsKey.name)
-        aCoder.encode(address, forKey: SettingsKey.address)
+        //aCoder.encode(name, forKey: SettingsKey.name)
+        //aCoder.encode(address, forKey: SettingsKey.address)
     }
     
     //initialize NSCoder, decode saved values
     required convenience init?(coder aDecoder: NSCoder) {
         
         let currency = aDecoder.decodeObject(forKey: SettingsKey.currency) as! String
-        let name = aDecoder.decodeObject(forKey: SettingsKey.name) as! String
-        let address = aDecoder.decodeObject(forKey: SettingsKey.address) as! String
+        //let name = aDecoder.decodeObject(forKey: SettingsKey.name) as! String
+        //let address = aDecoder.decodeObject(forKey: SettingsKey.address) as! String
         
         // initialize
-        self.init(currency:currency, name:name, address:address)
+        self.init(currency:currency) //, name:name, address:address)
     }
     /*
      let settings = UserDefaults.standard
@@ -78,6 +78,7 @@ class Settings: NSObject, NSCoding {
      }
      */
     
+    /*
     //setCurrency sets the currency
     func setCurrency (setCurrency:String) {
         currency = setCurrency
@@ -107,4 +108,5 @@ class Settings: NSObject, NSCoding {
     func getAddress() -> String {
         return address
     }
+     */
 }

@@ -17,48 +17,40 @@ class ExpenseModel {//: NSObject, NSCoding {
     }
 }
 
-class Expense {//: NSObject, NSCoding{
+class Expense: NSObject, NSCoding {
     var cost : Double
     var name : String
     var category : String
     //var desc: String
     
-    struct ExpenseKey {
-        static let cost = "cost"
-        static let name = "name"
-        static let category = "category"
-        //static let desc = "desc"
-        static let expenses = "expenses"
-    }
-    
     init(cost:Double, name:String, category:String) {//desc:String) {
         self.cost = cost
         self.name = name
         self.category = category
-        //self.desc = desc
+        
         //super.init()
     }
     
     //EXPENSE PERSISTENCE
-    /*
+    
     //encode saved values
     func encode(with aCoder: NSCoder) {
-        aCoder.encode(cost, forKey: ExpenseKey.cost)
-        aCoder.encode(name, forKey: ExpenseKey.name)
-        aCoder.encode(category, forKey: ExpenseKey.category)
-        aCoder.encode(desc, forKey: ExpenseKey.desc)
+        aCoder.encode(cost, forKey: "Cost")
+        aCoder.encode(name, forKey: "Name")
+        aCoder.encode(category, forKey: "Category")
+        
     }
     
     //initialize NSCoder, decode saved values
     required convenience init?(coder aDecoder: NSCoder) {
         
-        let name = aDecoder.decodeObject(forKey: ExpenseKey.name) as? String
-        let cost = aDecoder.decodeDouble(forKey: ExpenseKey.cost)
-        let category = aDecoder.decodeObject(forKey: ExpenseKey.category) as? String
-        let desc = aDecoder.decodeObject(forKey: ExpenseKey.desc) as? String
+        let name = aDecoder.decodeObject(forKey: "Name") as? String
+        let cost = aDecoder.decodeDouble(forKey: "Cost")
+        let category = aDecoder.decodeObject(forKey: "Category") as? String
+        
         
         // initialize
-        self.init(cost:cost, name:name!, category:category!, desc:desc!)
+        self.init(cost:cost, name:name!, category:category!)
     }
-    */
+    
 }

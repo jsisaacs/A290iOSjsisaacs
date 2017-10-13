@@ -9,11 +9,17 @@
 import UIKit
 
 class SettingViewController: UITableViewController {
-
+    
+    @IBOutlet weak var currencyTextField: UITextField!
+    
+    @IBAction func wipeAllData(_ sender: Any) {
+        expenses.removeAll()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    /*
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -30,10 +36,5 @@ class SettingViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-}
-
-extension SettingViewController {
-    
-    @IBAction func saveSetting(_ segue: UIStoryboardSegue) {
-    }
+    */
 }

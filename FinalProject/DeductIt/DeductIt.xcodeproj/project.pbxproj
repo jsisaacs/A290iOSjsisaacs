@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		851E70241F908F0A00C141F2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851E70231F908F0A00C141F2 /* SettingViewController.swift */; };
-		851E70261F9093E700C141F2 /* SettingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851E70251F9093E700C141F2 /* SettingDetailViewController.swift */; };
 		855776851F90849E00C62EBC /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855776841F90849E00C62EBC /* StatisticsViewController.swift */; };
 		85A12BC01F903D9F00E20BCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A12BBF1F903D9F00E20BCE /* AppDelegate.swift */; };
 		85A12BC51F903D9F00E20BCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A12BC31F903D9F00E20BCE /* Main.storyboard */; };
@@ -44,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		851E70231F908F0A00C141F2 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = ../SettingViewController.swift; sourceTree = "<group>"; };
-		851E70251F9093E700C141F2 /* SettingDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingDetailViewController.swift; sourceTree = "<group>"; };
 		855776841F90849E00C62EBC /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		85A12BBC1F903D9F00E20BCE /* DeductIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeductIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A12BBF1F903D9F00E20BCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 				85A12BF51F90454700E20BCE /* ExpenseCell.swift */,
 				85A12BFB1F905B6D00E20BCE /* GlobalVariables.swift */,
 				851E70231F908F0A00C141F2 /* SettingViewController.swift */,
-				851E70251F9093E700C141F2 /* SettingDetailViewController.swift */,
 				855776841F90849E00C62EBC /* StatisticsViewController.swift */,
 				85A12BED1F90409700E20BCE /* ExpensesViewController.swift */,
 				85A12BF71F90484A00E20BCE /* ExpenseDetailsViewController.swift */,
@@ -293,7 +290,6 @@
 				85A12BF21F9041B700E20BCE /* SettingsModel.swift in Sources */,
 				851E70241F908F0A00C141F2 /* SettingViewController.swift in Sources */,
 				85A12BF61F90454700E20BCE /* ExpenseCell.swift in Sources */,
-				851E70261F9093E700C141F2 /* SettingDetailViewController.swift in Sources */,
 				855776851F90849E00C62EBC /* StatisticsViewController.swift in Sources */,
 				85A12BC01F903D9F00E20BCE /* AppDelegate.swift in Sources */,
 				85A12BEE1F90409700E20BCE /* ExpensesViewController.swift in Sources */,

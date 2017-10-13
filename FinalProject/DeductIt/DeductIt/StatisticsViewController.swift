@@ -10,8 +10,30 @@ import UIKit
 
 class StatisticsViewController: UIViewController {
     @IBOutlet weak var totalSpentLabel: UILabel!
-    @IBOutlet weak var numberOfExpensesLoggedLabel: UILabel!
+    @IBOutlet weak var numberExpensesLoggedLabel: UILabel!
     @IBOutlet weak var mostCommonCategoryLabel: UILabel!
+    
+    @IBAction func saveSetting(_ segue: UIStoryboardSegue) {
+        
+    }
+    
+    var categories = [
+        "Gifts to Charity",
+        "Advertising and Promotion",
+        "Dues and Fees",
+        "Education and Research",
+        "Equipment and Supplies",
+        "Home Office",
+        "Internet",
+        "Job Hunting Expenses",
+        "Meals and Entertainment",
+        "Telephone Charges",
+        "Travel and Transportation",
+        "Uniforms and Gear",
+        "Gifts up to $25",
+        "Casualty and Left Losses",
+        "Investment expenses"
+    ]
     
     /*
     func totalSpent(expenses:[Expenses]) {
@@ -39,15 +61,47 @@ class StatisticsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        setLabels()
     }
-    */
-
+    
+    func setLabels() {
+        if (expenses.count == 0) {
+            totalSpentLabel.text = ""
+            mostCommonCategoryLabel.text = ""
+            numberExpensesLoggedLabel.text = ""
+            
+            return
+        }
+        var total : Double = 0
+        var categoryLog = [Int](repeating: 0, count:15)
+        
+        for i in 0 ..< expenses.count {
+            total += expenses[i].cost
+            let categoryIndex = getCategoryIndex(category:expenses[i].category)
+            categoryLog[categoryIndex] += 1
+        }
+        var mostUsedCategory = 0
+        var mostUsedCategoryCount = 0
+        
+        for i in 0 ..< categoryLog.count {
+            if (mostUsedCategoryCount < categoryLog[i]) {
+                mostUsedCategoryCount = categoryLog[i]
+                mostUsedCategory = i
+            }
+        }
+        totalSpentLabel.text = "$ " + String(total)
+        mostCommonCategoryLabel.text = categories[mostUsedCategory]
+        numberExpensesLoggedLabel.text = String(expenses.count)
+    }
+    
+    func getCategoryIndex(category:String) -> Int{
+        for i in 0 ..< categories.count {
+            if (categories[i] == category) {
+                return i
+            }
+        }
+        return -1
+    }
 }
+

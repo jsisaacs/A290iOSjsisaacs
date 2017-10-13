@@ -358,7 +358,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="String" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhs-8A-xLe">
                                         <rect key="frame" x="8" y="45" width="327" height="79"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="textColor" red="0.034849032760000002" green="0.78202062849999998" blue="0.45961326359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -398,17 +398,19 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="mostCommonCategoryLabel" destination="hhs-8A-xLe" id="65G-uW-cys"/>
+                        <outlet property="mostCommonCategoryLabel" destination="hhs-8A-xLe" id="LWS-7D-opM"/>
+                        <outlet property="numberExpensesLoggedLabel" destination="TrE-wz-Uk3" id="nK1-or-CUH"/>
+                        <outlet property="totalSpentLabel" destination="pDS-oH-6j6" id="fio-xB-PdO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b82-du-HhI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="953" y="-506"/>
         </scene>
-        <!--Setting Detail View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="M4r-yK-eZU">
             <objects>
-                <tableViewController id="UH7-2l-FIK" customClass="SettingDetailViewController" customModule="DeductIt" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="UH7-2l-FIK" customClass="SettingViewController" customModule="DeductIt" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="nb3-Fe-L7j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -452,7 +454,7 @@
                                                         <color key="titleColor" red="1" green="0.35690863820000002" blue="0.35076468869999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="wipeAllData:" destination="UH7-2l-FIK" eventType="touchUpInside" id="j5f-aE-93O"/>
+                                                        <action selector="wipeAllData:" destination="UH7-2l-FIK" eventType="touchUpInside" id="ky5-QI-N2f"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -469,12 +471,12 @@
                     <navigationItem key="navigationItem" id="JEx-0G-DIa">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="LJW-kd-ZvL">
                             <connections>
-                                <segue destination="cKF-9S-Fpk" kind="unwind" unwindAction="saveSetting:" id="0qX-lM-i4J"/>
+                                <segue destination="cKF-9S-Fpk" kind="unwind" identifier="SaveSetting" unwindAction="saveSetting:" id="qQa-Ia-Cv1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="currencyTextField" destination="nvv-qK-P2l" id="vtN-Zo-MdH"/>
+                        <outlet property="currencyTextField" destination="nvv-qK-P2l" id="Zj8-Mj-8fS"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VzG-V1-ccY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -544,9 +546,10 @@
         <!--Navigation Controller-->
         <scene sceneID="2Sf-N3-BsG">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdj-pi-piy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BYg-Iz-Grg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nii-vp-EDz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nii-vp-EDz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.034849032760000002" green="0.78202062849999998" blue="0.45961326359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -556,7 +559,6 @@
                         <segue destination="UH7-2l-FIK" kind="relationship" relationship="rootViewController" id="0sC-c1-KpP"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdj-pi-piy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1858.4000000000001" y="-505.09745127436287"/>
         </scene>
