@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        let myDefaults = [myUsernameKey: "Josh"]
+        UserDefaults.standard.register(defaults: myDefaults)
+        
         UINavigationBar.appearance().barStyle = .blackOpaque
         
         loadData()
@@ -52,9 +55,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func saveData() {
         let defaults = UserDefaults.standard
-        let settingsData = NSKeyedArchiver.archivedData(withRootObject: settingsModel)
-        defaults.set(settingsData, forKey: "SettingsKey")
-        
         
         let expensesData = NSKeyedArchiver.archivedData(withRootObject: expenses)
         defaults.set(expensesData, forKey: "ExpensesKey")
@@ -62,10 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func loadData() {
         let defaults = UserDefaults.standard
-        let settingsData = defaults.value(forKey: "SettingsKey")
-        if(settingsData != nil) {
-            settingsModel = NSKeyedUnarchiver.unarchiveObject(with: settingsData! as! Data) as! Settings
-        }
+        
         let expensesData = defaults.value(forKey: "ExpensesKey")
         if(expensesData != nil) {
             expenses = NSKeyedUnarchiver.unarchiveObject(with: expensesData! as! Data) as! [Expense]

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		851E70241F908F0A00C141F2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851E70231F908F0A00C141F2 /* SettingViewController.swift */; };
+		854D97591F91A23D008AEFA2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854D97581F91A23D008AEFA2 /* Constants.swift */; };
 		855776851F90849E00C62EBC /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855776841F90849E00C62EBC /* StatisticsViewController.swift */; };
+		8562EB0A1F9191B3006C7313 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8562EB091F9191B2006C7313 /* Settings.bundle */; };
 		85A12BC01F903D9F00E20BCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A12BBF1F903D9F00E20BCE /* AppDelegate.swift */; };
 		85A12BC51F903D9F00E20BCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A12BC31F903D9F00E20BCE /* Main.storyboard */; };
 		85A12BC71F903D9F00E20BCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A12BC61F903D9F00E20BCE /* Assets.xcassets */; };
@@ -17,11 +18,11 @@
 		85A12BE01F903DA000E20BCE /* DeductItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A12BDF1F903DA000E20BCE /* DeductItUITests.swift */; };
 		85A12BEE1F90409700E20BCE /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A12BED1F90409700E20BCE /* ExpensesViewController.swift */; };
 		85A12BF01F90411300E20BCE /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A12BEF1F90411300E20BCE /* Expense.swift */; };
-		85A12BF21F9041B700E20BCE /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A12BF11F9041B700E20BCE /* SettingsModel.swift */; };
 		85A12BF61F90454700E20BCE /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A12BF51F90454700E20BCE /* ExpenseCell.swift */; };
 		85A12BF81F90484A00E20BCE /* ExpenseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A12BF71F90484A00E20BCE /* ExpenseDetailsViewController.swift */; };
 		85A12BFA1F90532D00E20BCE /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A12BF91F90532D00E20BCE /* CategoryPickerViewController.swift */; };
 		85A12BFC1F905B6D00E20BCE /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A12BFB1F905B6D00E20BCE /* GlobalVariables.swift */; };
+		85F00C581F91AAE00047B2E7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F00C571F91AAE00047B2E7 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		851E70231F908F0A00C141F2 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = ../SettingViewController.swift; sourceTree = "<group>"; };
+		854D97581F91A23D008AEFA2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		855776841F90849E00C62EBC /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		8562EB091F9191B2006C7313 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		85A12BBC1F903D9F00E20BCE /* DeductIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeductIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A12BBF1F903D9F00E20BCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85A12BC41F903D9F00E20BCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,11 +60,11 @@
 		85A12BE11F903DA000E20BCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85A12BED1F90409700E20BCE /* ExpensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
 		85A12BEF1F90411300E20BCE /* Expense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
-		85A12BF11F9041B700E20BCE /* SettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		85A12BF51F90454700E20BCE /* ExpenseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
 		85A12BF71F90484A00E20BCE /* ExpenseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseDetailsViewController.swift; sourceTree = "<group>"; };
 		85A12BF91F90532D00E20BCE /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		85A12BFB1F905B6D00E20BCE /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		85F00C571F91AAE00047B2E7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,20 +115,21 @@
 		85A12BBE1F903D9F00E20BCE /* DeductIt */ = {
 			isa = PBXGroup;
 			children = (
+				8562EB091F9191B2006C7313 /* Settings.bundle */,
 				85A12BC81F903D9F00E20BCE /* LaunchScreen.storyboard */,
 				85A12BC31F903D9F00E20BCE /* Main.storyboard */,
 				85A12BBF1F903D9F00E20BCE /* AppDelegate.swift */,
-				85A12BF11F9041B700E20BCE /* SettingsModel.swift */,
 				85A12BEF1F90411300E20BCE /* Expense.swift */,
 				85A12BF51F90454700E20BCE /* ExpenseCell.swift */,
 				85A12BFB1F905B6D00E20BCE /* GlobalVariables.swift */,
-				851E70231F908F0A00C141F2 /* SettingViewController.swift */,
+				85F00C571F91AAE00047B2E7 /* SettingsViewController.swift */,
 				855776841F90849E00C62EBC /* StatisticsViewController.swift */,
 				85A12BED1F90409700E20BCE /* ExpensesViewController.swift */,
 				85A12BF71F90484A00E20BCE /* ExpenseDetailsViewController.swift */,
 				85A12BF91F90532D00E20BCE /* CategoryPickerViewController.swift */,
 				85A12BC61F903D9F00E20BCE /* Assets.xcassets */,
 				85A12BCB1F903D9F00E20BCE /* Info.plist */,
+				854D97581F91A23D008AEFA2 /* Constants.swift */,
 			);
 			path = DeductIt;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8562EB0A1F9191B3006C7313 /* Settings.bundle in Resources */,
 				85A12BCA1F903D9F00E20BCE /* LaunchScreen.storyboard in Resources */,
 				85A12BC71F903D9F00E20BCE /* Assets.xcassets in Resources */,
 				85A12BC51F903D9F00E20BCE /* Main.storyboard in Resources */,
@@ -286,13 +290,13 @@
 				85A12BFA1F90532D00E20BCE /* CategoryPickerViewController.swift in Sources */,
 				85A12BF01F90411300E20BCE /* Expense.swift in Sources */,
 				85A12BF81F90484A00E20BCE /* ExpenseDetailsViewController.swift in Sources */,
+				85F00C581F91AAE00047B2E7 /* SettingsViewController.swift in Sources */,
 				85A12BFC1F905B6D00E20BCE /* GlobalVariables.swift in Sources */,
-				85A12BF21F9041B700E20BCE /* SettingsModel.swift in Sources */,
-				851E70241F908F0A00C141F2 /* SettingViewController.swift in Sources */,
 				85A12BF61F90454700E20BCE /* ExpenseCell.swift in Sources */,
 				855776851F90849E00C62EBC /* StatisticsViewController.swift in Sources */,
 				85A12BC01F903D9F00E20BCE /* AppDelegate.swift in Sources */,
 				85A12BEE1F90409700E20BCE /* ExpensesViewController.swift in Sources */,
+				854D97591F91A23D008AEFA2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

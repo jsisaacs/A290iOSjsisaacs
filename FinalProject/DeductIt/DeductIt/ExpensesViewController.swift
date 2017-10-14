@@ -38,6 +38,7 @@ extension ExpensesViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return expenses.count
+
     }
     
     override func tableView(_ tableView: UITableView,
@@ -60,5 +61,4 @@ extension ExpensesViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
     }
-    
 }

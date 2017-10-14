@@ -14,7 +14,9 @@ class StatisticsViewController: UIViewController {
     @IBOutlet weak var mostCommonCategoryLabel: UILabel!
     
     @IBAction func saveSetting(_ segue: UIStoryboardSegue) {
-        
+    }
+    
+    @IBAction func backButtonSettingsViewController(_ segue: UIStoryboardSegue) {
     }
     
     var categories = [
@@ -67,9 +69,9 @@ class StatisticsViewController: UIViewController {
     
     func setLabels() {
         if (expenses.count == 0) {
-            totalSpentLabel.text = ""
-            mostCommonCategoryLabel.text = ""
-            numberExpensesLoggedLabel.text = ""
+            totalSpentLabel.text = "None"
+            mostCommonCategoryLabel.text = "No Expenses Logged"
+            numberExpensesLoggedLabel.text = "None"
             
             return
         }

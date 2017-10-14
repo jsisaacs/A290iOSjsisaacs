@@ -8,30 +8,28 @@
 
 import UIKit
 
-class SettingsViewController: UITableViewController {
+class SettingsViewController: UIViewController {
 
-    //@IBOutlet weak var currencyLabel: UITextField!
+    @IBOutlet var myUsernameLabel:UILabel!
     
-    //@IBAction func wipeAllData(_ sender: Any) {
-        //expenses.removeAll()
-    //}
-    
-    
-    //override func viewDidLoad() {
-        //super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        // Do any additional setup after loading the view.
+    }
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    //}
-}
-
-extension SettingsViewController {
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
-    //@IBAction func saveSettings(_ segue: UIStoryboardSegue) {
-        
-    //}
+    func refreshFields() {
+        let myDefaults = UserDefaults.standard
+        myUsernameLabel.text = myDefaults.string(forKey: myUsernameKey)
+    }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        refreshFields()
+    }
 }
