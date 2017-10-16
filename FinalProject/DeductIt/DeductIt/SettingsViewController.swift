@@ -11,6 +11,7 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet var myUsernameLabel:UILabel!
+    @IBOutlet weak var myNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class SettingsViewController: UIViewController {
     func refreshFields() {
         let myDefaults = UserDefaults.standard
         myUsernameLabel.text = myDefaults.string(forKey: myUsernameKey)
+        myNameLabel.text = myDefaults.string(forKey: myNameKey)
     }
     
     override func viewWillAppear(_ animated: Bool) {

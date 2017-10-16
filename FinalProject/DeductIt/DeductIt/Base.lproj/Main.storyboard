@@ -454,8 +454,24 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1T-py-y5W">
                                 <rect key="frame" x="16" y="142" width="129" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="129" id="VF3-yE-mwL"/>
-                                    <constraint firstAttribute="height" constant="21" id="o5r-dV-muA"/>
+                                    <constraint firstAttribute="width" constant="129" id="VT6-5I-HJW"/>
+                                    <constraint firstAttribute="height" constant="21" id="vaT-0M-4E2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" red="0.35499495269999998" green="0.41088792680000003" blue="0.46920412779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sg0-UA-e90">
+                                <rect key="frame" x="16" y="313" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.92817050219999997" green="0.94931036229999999" blue="0.97266334300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" red="0.35499495269999998" green="0.41088792680000003" blue="0.46920412779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgf-ET-WAR">
+                                <rect key="frame" x="16" y="275" width="129" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dI9-Od-S1E"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <color key="textColor" red="0.35499495269999998" green="0.41088792680000003" blue="0.46920412779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -465,19 +481,34 @@
                                 <rect key="frame" x="16" y="171" width="5" height="40"/>
                                 <color key="backgroundColor" red="0.34473815340000002" green="0.5755276305" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2lU-zx-W0X">
+                                <rect key="frame" x="16" y="313" width="5" height="40"/>
+                                <color key="backgroundColor" red="0.34473815340000002" green="0.5755276305" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iQn-fu-M6M" firstAttribute="top" secondItem="lmP-se-wq1" secondAttribute="bottom" constant="456" id="2h9-eJ-9DD"/>
-                            <constraint firstAttribute="trailing" secondItem="lmP-se-wq1" secondAttribute="trailing" constant="354" id="3mV-D6-Wla"/>
-                            <constraint firstItem="W1T-py-y5W" firstAttribute="leading" secondItem="oBW-gu-ffp" secondAttribute="leadingMargin" id="Hey-Xb-RVj"/>
-                            <constraint firstItem="lmP-se-wq1" firstAttribute="top" secondItem="W1T-py-y5W" secondAttribute="bottom" constant="8" symbolic="YES" id="ISM-K1-3oV"/>
-                            <constraint firstItem="yHS-HD-pHO" firstAttribute="leading" secondItem="lmP-se-wq1" secondAttribute="leading" id="J1p-tR-0D8"/>
-                            <constraint firstItem="W1T-py-y5W" firstAttribute="top" secondItem="5oX-xe-AfC" secondAttribute="bottom" constant="78" id="OsA-O9-xy2"/>
-                            <constraint firstItem="yHS-HD-pHO" firstAttribute="trailing" secondItem="oBW-gu-ffp" secondAttribute="trailingMargin" id="aP3-Yt-P8C"/>
-                            <constraint firstItem="yHS-HD-pHO" firstAttribute="leading" secondItem="W1T-py-y5W" secondAttribute="leading" id="bwK-zW-9fd"/>
-                            <constraint firstItem="yHS-HD-pHO" firstAttribute="top" secondItem="lmP-se-wq1" secondAttribute="top" id="szD-Fl-Gbr"/>
-                            <constraint firstItem="yHS-HD-pHO" firstAttribute="bottom" secondItem="lmP-se-wq1" secondAttribute="bottom" id="tdI-hj-53j"/>
+                            <constraint firstItem="yHS-HD-pHO" firstAttribute="trailing" secondItem="sg0-UA-e90" secondAttribute="trailing" id="0Qk-vy-F4v"/>
+                            <constraint firstAttribute="trailing" secondItem="lmP-se-wq1" secondAttribute="trailing" constant="354" id="A3k-oR-Hey"/>
+                            <constraint firstItem="yHS-HD-pHO" firstAttribute="leading" secondItem="lmP-se-wq1" secondAttribute="leading" id="BuB-Ro-efe"/>
+                            <constraint firstItem="2lU-zx-W0X" firstAttribute="bottom" secondItem="sg0-UA-e90" secondAttribute="bottom" id="IJ4-wY-t3i"/>
+                            <constraint firstItem="lmP-se-wq1" firstAttribute="top" secondItem="yHS-HD-pHO" secondAttribute="top" id="Idv-WK-4bm"/>
+                            <constraint firstItem="lmP-se-wq1" firstAttribute="trailing" secondItem="2lU-zx-W0X" secondAttribute="trailing" id="Ou4-Ol-7h6"/>
+                            <constraint firstItem="W1T-py-y5W" firstAttribute="trailing" secondItem="cgf-ET-WAR" secondAttribute="trailing" id="P6h-bI-BHr"/>
+                            <constraint firstItem="yHS-HD-pHO" firstAttribute="bottom" secondItem="lmP-se-wq1" secondAttribute="bottom" id="PvN-zy-Qht"/>
+                            <constraint firstItem="iQn-fu-M6M" firstAttribute="top" secondItem="2lU-zx-W0X" secondAttribute="bottom" constant="314" id="SR4-03-FgW"/>
+                            <constraint firstItem="sg0-UA-e90" firstAttribute="top" secondItem="2lU-zx-W0X" secondAttribute="top" id="Snn-fp-5FW"/>
+                            <constraint firstItem="yHS-HD-pHO" firstAttribute="trailing" secondItem="oBW-gu-ffp" secondAttribute="trailingMargin" id="Txh-Yk-YA2"/>
+                            <constraint firstItem="2lU-zx-W0X" firstAttribute="centerY" secondItem="oBW-gu-ffp" secondAttribute="centerY" id="Vgo-J4-Wpl"/>
+                            <constraint firstItem="cgf-ET-WAR" firstAttribute="leading" secondItem="sg0-UA-e90" secondAttribute="leading" id="ZxE-1F-0dh"/>
+                            <constraint firstItem="W1T-py-y5W" firstAttribute="leading" secondItem="yHS-HD-pHO" secondAttribute="leading" id="bWp-ej-Azd"/>
+                            <constraint firstItem="W1T-py-y5W" firstAttribute="leading" secondItem="oBW-gu-ffp" secondAttribute="leadingMargin" id="bc2-rl-Dq9"/>
+                            <constraint firstItem="2lU-zx-W0X" firstAttribute="top" secondItem="cgf-ET-WAR" secondAttribute="bottom" constant="8" symbolic="YES" id="coh-1c-ydU"/>
+                            <constraint firstItem="lmP-se-wq1" firstAttribute="top" secondItem="W1T-py-y5W" secondAttribute="bottom" constant="8" symbolic="YES" id="kyH-Vo-asn"/>
+                            <constraint firstItem="yHS-HD-pHO" firstAttribute="leading" secondItem="cgf-ET-WAR" secondAttribute="leading" id="o0w-xR-Xdj"/>
+                            <constraint firstItem="sg0-UA-e90" firstAttribute="leading" secondItem="2lU-zx-W0X" secondAttribute="leading" id="rYu-bY-pEc"/>
+                            <constraint firstItem="cgf-ET-WAR" firstAttribute="top" secondItem="lmP-se-wq1" secondAttribute="bottom" constant="64" id="thg-Yz-tmJ"/>
+                            <constraint firstItem="W1T-py-y5W" firstAttribute="top" secondItem="5oX-xe-AfC" secondAttribute="bottom" constant="78" id="zoS-ha-0SU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="Jeb-mV-QM8">
@@ -488,6 +519,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="myNameLabel" destination="sg0-UA-e90" id="d1m-Jm-go0"/>
                         <outlet property="myUsernameLabel" destination="yHS-HD-pHO" id="c6c-gb-5ZE"/>
                     </connections>
                 </viewController>
@@ -560,7 +592,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PsH-as-upN" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="HMl-60-QLF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HMl-60-QLF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.034849032760000002" green="0.78202062849999998" blue="0.45961326359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

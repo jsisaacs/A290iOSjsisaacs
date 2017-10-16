@@ -9,3 +9,4 @@
 import Foundation
 
 let myUsernameKey = "username_preference"
+let myNameKey = "name_preference"
