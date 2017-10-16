@@ -7,25 +7,8 @@
 //
 
 import UIKit
-//import Charts
 
-protocol GetData {
-    func getData(with data:[String], values:[String])
-    var totalExpenses: [String] {
-        get set
-    }
-    var categoryBreakdown: [String] {
-        get set
-    }
-}
-
-/*
-class DashboardViewController: UIViewController, GetData {
-    
-    var totalExpenses: [String]
-    
-    var categoryBreakdown: [String]
-    
+class DashboardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,4 +26,3 @@ extension DashboardViewController {
     @IBAction func saveSettings(_ segue: UIStoryboardSegue) {
     }
 }
-*/

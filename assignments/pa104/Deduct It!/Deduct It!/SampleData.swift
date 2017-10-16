@@ -9,14 +9,11 @@
 import Foundation
 
 final class SampleData {
-    
-    
     static func generateExpenseData() -> [Expense] {
         return [
-            //(cost:Double, name:String, category:String, date:String)
-            Expense(cost:10.00, name:"Exercise 1", category:"Category 1", date:"09/30/2017"),
-            Expense(cost:10.00, name:"Exercise 2", category:"Category 2", date:"09/30/2017"),
-            Expense(cost:10.00, name:"Exercise 3", category:"Category 3", date:"09/30/2017")
+            Expense(item: "Expense1", date: "09/30/2017", cost: 14.75),
+            Expense(item: "Expense2", date: "09/30/2017", cost: 14.75),
+            Expense(item: "Expense3", date: "09/30/2017", cost: 14.75)
         ]
     }
 }
