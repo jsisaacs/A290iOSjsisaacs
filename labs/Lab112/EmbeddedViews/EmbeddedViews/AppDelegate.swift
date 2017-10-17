@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  EmbeddedViews
 //
-//  Created by Josh Isaacson - Work on 10/2/17.
+//  Created by Josh Isaacson - Work on 10/17/17.
 //  Copyright © 2017 A290 Fall 2017 - jsisaacs. All rights reserved.
 //
 
@@ -12,12 +12,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+
     var myFirstToDoData: FirstToDoDataModel = FirstToDoDataModel()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        print ("in application...didFinishLaunchingWithOptions \(myFirstToDoData.getFirstItemCategory()) is the first entry in the ToDo list.")
         return true
     }
 
